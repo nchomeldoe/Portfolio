@@ -1,0 +1,63 @@
+@use "./variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  color: $color-primary;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: $spacing-small $spacing-medium;
+
+    .nav__name {
+      font-family: $font-primary;
+      font-weight: $font-weight-primary-bold;
+      font-size: $font-size-smallest;
+      .nav__name__last-name {
+        color: $color-secondary;
+      }
+    }
+
+    .nav__links {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      .nav__links {
+        display: inline-block;
+      }
+    }
+  }
+
+  .main {
+    margin: $spacing-small $spacing-medium;
+    padding-top: $spacing-large;
+
+    .intro {
+      margin-bottom: $spacing-large;
+      .intro__heading {
+        font-family: $font-primary;
+        font-weight: $font-weight-primary-regular;
+        font-size: $font-size-large;
+        margin-bottom: $spacing-medium;
+      }
+
+      .intro__hr {
+        width: $hr-width-large;
+        height: $hr-height-large;
+        margin-bottom: $spacing-medium;
+      }
+
+      .intro__paragraph {
+        font-family: $font-secondary;
+        font-weight: $font-weight-primary-regular;
+        font-size: $font-size-small;
+      }
+    }
+  }
+}

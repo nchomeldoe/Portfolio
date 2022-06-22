@@ -1,0 +1,16 @@
+@use "./variables" as *;
+
+hr {
+  background-color: $color-secondary;
+  border: $color-secondary;
+}
+
+.nav__hamburger {
+  color: $color-primary;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__hamburger {
+    display: none;
+  }
+}
