@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
+.outer-container {
   background-color: $background-color;
   color: $color-primary;
 
@@ -14,12 +14,16 @@ body {
     display: flex;
     justify-content: space-between;
     padding: $spacing-small $spacing-medium;
+    background-color: $background-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     .nav__name {
       font-family: $font-primary;
       font-weight: $font-weight-primary-bold;
       font-size: $font-size-smallest;
-      .nav__name__last-name {
+      .nav__last-name {
         color: $color-secondary;
       }
     }
@@ -57,6 +61,35 @@ body {
         font-family: $font-secondary;
         font-weight: $font-weight-primary-regular;
         font-size: $font-size-small;
+      }
+    }
+
+    .portfolio {
+      .portfolio__header {
+        display: flex;
+        align-items: center;
+        .portfolio__heading {
+          font-family: $font-primary;
+          font-weight: $font-weight-primary-bold;
+          font-size: 2 * $font-size-small;
+        }
+
+        .portfolio__arrow {
+          width: 1rem;
+          height: 1rem;
+          background-color: red;
+          // font-size: $font-size-medium;
+          // color: $color-primary;
+          margin-left: $spacing-small;
+          margin-right: $spacing-small;
+        }
+        fa-facebook {
+          margin: 40px;
+          color: $color-primary;
+          background-color: red;
+          width: 5rem;
+          height: 5rem;
+        }
       }
     }
   }

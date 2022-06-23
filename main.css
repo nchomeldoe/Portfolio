@@ -5,53 +5,80 @@
   box-sizing: border-box;
 }
 
-body {
+.outer-container {
   background-color: #2c2a2a;
   color: #ffffff;
 }
-body .nav {
+.outer-container .nav {
   display: flex;
   justify-content: space-between;
   padding: 1.25rem 1.875rem;
+  background-color: #2c2a2a;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-body .nav .nav__name {
+.outer-container .nav .nav__name {
   font-family: "Cormorant", serif;
   font-weight: 700;
   font-size: 0.75rem;
 }
-body .nav .nav__name .nav__name__last-name {
+.outer-container .nav .nav__name .nav__last-name {
   color: #d9bea5;
 }
-body .nav .nav__links {
+.outer-container .nav .nav__links {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  body .nav .nav__links {
+  .outer-container .nav .nav__links {
     display: inline-block;
   }
 }
-body .main {
+.outer-container .main {
   margin: 1.25rem 1.875rem;
   padding-top: 3.125rem;
 }
-body .main .intro {
+.outer-container .main .intro {
   margin-bottom: 3.125rem;
 }
-body .main .intro .intro__heading {
+.outer-container .main .intro .intro__heading {
   font-family: "Cormorant", serif;
   font-weight: 400;
   font-size: 4rem;
   margin-bottom: 1.875rem;
 }
-body .main .intro .intro__hr {
+.outer-container .main .intro .intro__hr {
   width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.875rem;
 }
-body .main .intro .intro__paragraph {
+.outer-container .main .intro .intro__paragraph {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1rem;
+}
+.outer-container .main .portfolio .portfolio__header {
+  display: flex;
+  align-items: center;
+}
+.outer-container .main .portfolio .portfolio__header .portfolio__heading {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.outer-container .main .portfolio .portfolio__header .portfolio__arrow {
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+.outer-container .main .portfolio .portfolio__header fa-facebook {
+  margin: 40px;
+  color: #ffffff;
+  background-color: red;
+  width: 5rem;
+  height: 5rem;
 }
 
 hr {

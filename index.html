@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nathalia's Portfolio</title>
   <link rel="stylesheet" href="./main.css" />
+  <script src="https://kit.fontawesome.com/2b7927968a.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="outer-container">
   <nav class="nav">
-    <a class=nav__name>NATHALIA <span class=nav__name__last-name>ROBBINS-CHERRY.</span></a>
+    <a class=nav__name>NATHALIA <span class=nav__last-name>ROBBINS-CHERRY.</span></a>
     <div class="nav__links">
       <a class="nav__link">About</a>
       <a class="nav__link">Portfolio</a>
@@ -32,12 +33,15 @@
         more.</p>
     </section>
 
-    <section>
-      <h2>PORTFOLIO</h2>
-      <span>X</span>
-      <div>
+    <section class="portfolio">
+      <div class="portfolio__header">
+        <h2 class="portfolio__heading">PORTFOLIO</h2>
+        <i class="portfolio__arrow fa-solid fa-arrow-turn-down"></i>
+        <i class="fa-brands fa-facebook fa-xl"></i>
+      </div>
+      <div class="portfolio__projects">
         <img>
-        <h4>PROJECT 1</h4>
+        <h4>MERN APP</h4>
         <button></button>
         <button></button>
         <hr>
@@ -78,7 +82,8 @@
         <hr>
       </div>
     </section>
-    <section>
+
+    <!-- <section>
       <h3>INTERESTS</h3>
       <hr>
       <img>
@@ -97,13 +102,14 @@
         <span>+</span>
         <hr>
       </div>
-    </section>
+    </section> -->
 
     <section>
       <h6>Get in touch.</h6>
       <button>Contact</button>
     </section>
   </main>
+
   <footer>
     <button></button>
     <button></button>
