@@ -83,14 +83,25 @@
           margin-left: $spacing-small;
           margin-right: $spacing-small;
         }
-        fa-facebook {
-          margin: 40px;
-          color: $color-primary;
-          background-color: red;
-          width: 5rem;
-          height: 5rem;
+      }
+      .portfolio__projects {
+        display: flex;
+        flex-direction: column;
+        .portfolio__project-card {
+          .portfolio__image-container {
+            width: auto;
+            height: $image-height;
+          }
         }
       }
     }
   }
+}
+
+.fa-facebook {
+  margin: 40px;
+  color: $color-primary;
+  color: red;
+  width: 10rem;
+  height: 10rem;
 }

@@ -73,12 +73,21 @@
   margin-left: 1.25rem;
   margin-right: 1.25rem;
 }
-.outer-container .main .portfolio .portfolio__header fa-facebook {
+.outer-container .main .portfolio .portfolio__projects {
+  display: flex;
+  flex-direction: column;
+}
+.outer-container .main .portfolio .portfolio__projects .portfolio__project-card .portfolio__image-container {
+  width: auto;
+  height: 12rem;
+}
+
+.fa-facebook {
   margin: 40px;
   color: #ffffff;
-  background-color: red;
-  width: 5rem;
-  height: 5rem;
+  color: red;
+  width: 10rem;
+  height: 10rem;
 }
 
 hr {
