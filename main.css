@@ -68,23 +68,11 @@
   font-size: 2rem;
 }
 .outer-container .main .portfolio .portfolio__header .portfolio__arrow {
-  width: 1rem;
-  height: 1rem;
-  background-color: red;
   margin-left: 1.25rem;
-  margin-right: 1.25rem;
 }
 .outer-container .main .portfolio .portfolio__projects {
   display: flex;
   flex-direction: column;
-}
-
-.fa-facebook {
-  margin: 40px;
-  color: #ffffff;
-  color: red;
-  width: 10rem;
-  height: 10rem;
 }
 
 hr {
@@ -101,7 +89,19 @@ hr {
     display: none;
   }
 }
+.portfolio__project-card {
+  display: flex;
+  flex-direction: column;
+}
 .portfolio__project-card .portfolio__image-container {
   width: auto;
   height: 12rem;
+  padding-bottom: 0.625rem;
+}
+.portfolio__project-card .portfolio__project-details {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

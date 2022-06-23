@@ -16,8 +16,18 @@ hr {
 }
 
 .portfolio__project-card {
+  display: flex;
+  flex-direction: column;
   .portfolio__image-container {
     width: auto;
     height: $image-height;
+    padding-bottom: $spacing-small/2;
+  }
+  .portfolio__project-details {
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-primary;
+    font-weight: $font-weight-primary-regular;
+    font-size: $font-size-medium;
   }
 }
