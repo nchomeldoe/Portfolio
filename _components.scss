@@ -21,13 +21,35 @@ hr {
   .portfolio__image-container {
     width: auto;
     height: $image-height;
-    padding-bottom: $spacing-small/2;
+    margin-bottom: $spacing-small/2;
+    background-color: $color-contrast-background;
   }
   .portfolio__project-details {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: $font-primary;
     font-weight: $font-weight-primary-regular;
     font-size: $font-size-medium;
+
+    .portfolio__project-links {
+      display: flex;
+      align-items: center;
+      .portfolio__project-link-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 3rem;
+        height: 3rem;
+        background-color: $color-contrast-background;
+        border-radius: 50%;
+        margin-left: $spacing-project-links;
+      }
+    }
+  }
+  .portfolio__hr {
+    width: $hr-width-small;
+    height: $hr-height-small;
+    margin-bottom: $spacing-small;
   }
 }
