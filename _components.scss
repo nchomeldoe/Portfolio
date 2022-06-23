@@ -14,3 +14,10 @@ hr {
     display: none;
   }
 }
+
+.portfolio__project-card {
+  .portfolio__image-container {
+    width: auto;
+    height: $image-height;
+  }
+}

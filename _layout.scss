@@ -68,6 +68,7 @@
       .portfolio__header {
         display: flex;
         align-items: center;
+        margin-bottom: $spacing-medium;
         .portfolio__heading {
           font-family: $font-primary;
           font-weight: $font-weight-primary-bold;
@@ -87,12 +88,6 @@
       .portfolio__projects {
         display: flex;
         flex-direction: column;
-        .portfolio__project-card {
-          .portfolio__image-container {
-            width: auto;
-            height: $image-height;
-          }
-        }
       }
     }
   }

@@ -60,6 +60,7 @@
 .outer-container .main .portfolio .portfolio__header {
   display: flex;
   align-items: center;
+  margin-bottom: 1.875rem;
 }
 .outer-container .main .portfolio .portfolio__header .portfolio__heading {
   font-family: "Cormorant", serif;
@@ -76,10 +77,6 @@
 .outer-container .main .portfolio .portfolio__projects {
   display: flex;
   flex-direction: column;
-}
-.outer-container .main .portfolio .portfolio__projects .portfolio__project-card .portfolio__image-container {
-  width: auto;
-  height: 12rem;
 }
 
 .fa-facebook {
@@ -103,4 +100,8 @@ hr {
   .nav__hamburger {
     display: none;
   }
+}
+.portfolio__project-card .portfolio__image-container {
+  width: auto;
+  height: 12rem;
 }/*# sourceMappingURL=main.css.map */
