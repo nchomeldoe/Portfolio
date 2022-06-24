@@ -99,7 +99,7 @@
 }
 .outer-container .main .about .about__header .about__image-container {
   margin-bottom: 0.625rem;
-  max-width: 21rem;
+  max-width: 30rem;
   margin-bottom: 1.875rem;
 }
 .outer-container .main .about .about__information {
@@ -193,12 +193,13 @@ a:hover {
 }
 .portfolio__project-card .portfolio__image-container {
   margin-bottom: 0.625rem;
-  max-width: 21rem;
+  max-width: 30rem;
 }
 .portfolio__project-card .portfolio__project-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0.625rem;
 }
 .portfolio__project-card .portfolio__project-details .portfolio__project-name {
   font-family: "Cormorant", serif;
