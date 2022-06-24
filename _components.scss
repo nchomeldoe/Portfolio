@@ -52,4 +52,21 @@ hr {
     height: $hr-height-small;
     margin-bottom: $spacing-small;
   }
+  .portfolio__project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .portfolio__project-tag {
+      background-color: $color-contrast-background;
+      min-width: 4rem;
+      padding: 0.3rem;
+      text-align: center;
+      margin: $spacing-small/5;
+      font-family: $font-secondary;
+      font-weight: $font-weight-secondary-semi-bold;
+      font-size: $font-size-tags;
+    }
+  }
 }

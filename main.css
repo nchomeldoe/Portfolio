@@ -125,4 +125,20 @@ hr {
   width: 3.75rem;
   height: 0.063rem;
   margin-bottom: 1.25rem;
+}
+.portfolio__project-card .portfolio__project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio__project-card .portfolio__project-tags .portfolio__project-tag {
+  background-color: #3c3636;
+  min-width: 4rem;
+  padding: 0.3rem;
+  text-align: center;
+  margin: 0.25rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.625rem;
 }/*# sourceMappingURL=main.css.map */
