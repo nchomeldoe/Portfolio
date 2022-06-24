@@ -21,7 +21,7 @@
 .outer-container .nav .nav__name {
   font-family: "Cormorant", serif;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 .outer-container .nav .nav__name .nav__last-name {
   color: #d9bea5;
@@ -36,7 +36,7 @@
 }
 .outer-container .main {
   margin: 1.25rem 1.875rem;
-  padding-top: 3.125rem;
+  padding-top: 5rem;
 }
 .outer-container .main .intro {
   margin-bottom: 3.125rem;
@@ -59,6 +59,8 @@
   line-height: 1.6rem;
 }
 .outer-container .main .portfolio {
+  padding-top: 60px;
+  margin-top: -60px;
   margin-bottom: 3.125rem;
 }
 .outer-container .main .portfolio .portfolio__header {
@@ -79,6 +81,8 @@
   flex-direction: column;
 }
 .outer-container .main .about {
+  padding-top: 60px;
+  margin-top: -60px;
   display: flex;
   flex-direction: column;
 }
@@ -131,14 +135,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 3.125rem;
 }
 .outer-container .main .contact .contact__heading {
   font-family: "Cormorant", serif;
   font-weight: 400;
   font-size: 4rem;
-  margin-bottom: 1.875rem;
+  margin-bottom: 3.125rem;
   align-items: center;
   text-align: center;
+}
+.outer-container .footer {
+  background-color: #3b3636;
+  height: 6.25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 1.875rem;
+}
+.outer-container .footer .footer__links {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 hr {
@@ -148,6 +168,14 @@ hr {
 
 a {
   cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+}
+a:visited, a:hover, a:active {
+  color: inherit;
+}
+a:hover {
+  transform: scale(1.1);
 }
 
 .nav__hamburger {
@@ -185,7 +213,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 3rem;
+  width: 3rem;
   height: 3rem;
   background-color: #3c3636;
   border-radius: 50%;
@@ -234,10 +262,10 @@ a {
   font-size: 1.5rem;
 }
 .cv-card .cv-card__hr {
-  height: 0.126rem;
+  height: 0.063rem;
   width: 100%;
   margin-bottom: 1.25rem;
-  background-color: #3c3636;
+  background-color: #5c5c5c;
 }
 
 .contact__button {
@@ -245,4 +273,22 @@ a {
   border: 0.063rem solid #d9bea5;
   color: #ffffff;
   width: 90%;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  height: 3.75rem;
+}
+
+.footer__link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: #453f3f;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  color: #d9bea5;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

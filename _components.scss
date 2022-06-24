@@ -7,6 +7,16 @@ hr {
 
 a {
   cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+  &:visited,
+  &:hover,
+  &:active {
+    color: inherit;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .nav__hamburger {
@@ -43,11 +53,11 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-        min-width: 3rem;
+        width: 3rem;
         height: 3rem;
         background-color: $background-color-secondary;
         border-radius: 50%;
-        margin-left: $spacing-project-links;
+        margin-left: $spacing-links;
       }
     }
   }
@@ -98,10 +108,10 @@ a {
     }
   }
   .cv-card__hr {
-    height: $hr-height-small * 2;
+    height: $hr-height-small;
     width: 100%;
     margin-bottom: $spacing-small;
-    background-color: $background-color-secondary;
+    background-color: $background-color-cv-card-hr;
   }
 }
 
@@ -110,4 +120,22 @@ a {
   border: 0.063rem solid $color-secondary;
   color: $color-primary;
   width: 90%;
+  font-family: $font-secondary;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-small;
+  height: 3.75rem;
+}
+
+.footer__link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: $background-color-footer-links;
+  border-radius: 50%;
+  margin-left: $spacing-links;
+  color: $color-secondary;
+  font-family: $font-secondary;
+  font-weight: $font-weight-bold;
 }

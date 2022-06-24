@@ -2,11 +2,15 @@
 
 $background-color-primary: #2c2a2a;
 $background-color-secondary: #3c3636;
+$background-color-footer: #3b3636;
+$background-color-cv-card-hr: #5c5c5c;
+$background-color-footer-links: #453f3f;
+
 $color-primary: #ffffff;
 $color-secondary: #d9bea5;
 
 $spacing-tags: 0.25rem;
-$spacing-project-links: 0.5rem;
+$spacing-links: 0.5rem;
 $spacing-small: 1.25rem;
 $spacing-medium: 1.875rem;
 $spacing-large: 3.125rem;
@@ -15,14 +19,13 @@ $font-primary: "Cormorant", serif;
 $font-secondary: "Inter", sans-serif;
 
 $font-weight-regular: 400;
-$font-weight-bold: 700;
-
 $font-weight-medium: 500;
 $font-weight-semi-bold: 600;
+$font-weight-bold: 700;
 
 $font-size-cv-info-header: 1.2rem;
 $font-size-tags: 0.625rem;
-$font-size-mobile-nav: 0.75rem;
+$font-size-mobile-nav: 0.8rem;
 $font-size-small: 1rem;
 $font-size-medium: 1.5rem;
 $font-size-large: 4rem;
@@ -38,3 +41,6 @@ $image-max-width: 21rem;
 
 $tag-width: 4.5rem;
 $tag-padding: 0.3rem;
+
+$anchor-padding: 60px;
+$anchor-compensation-margin: -60px;
