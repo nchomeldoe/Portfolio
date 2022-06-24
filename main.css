@@ -56,6 +56,10 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1rem;
+  line-height: 1.6rem;
+}
+.outer-container .main .portfolio {
+  margin-bottom: 3.125rem;
 }
 .outer-container .main .portfolio .portfolio__header {
   display: flex;
@@ -73,6 +77,36 @@
 .outer-container .main .portfolio .portfolio__projects {
   display: flex;
   flex-direction: column;
+}
+.outer-container .main .about {
+  display: flex;
+  flex-direction: column;
+}
+.outer-container .main .about .about__header .about__heading {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.625rem;
+}
+.outer-container .main .about .about__header .about__hr {
+  width: 3.3333333333rem;
+  height: 0.126rem;
+  margin-bottom: 1.875rem;
+}
+.outer-container .main .about .about__header .about__image-container {
+  margin-bottom: 0.625rem;
+  max-width: 21rem;
+  margin-bottom: 1.875rem;
+}
+.outer-container .main .about .about__information {
+  margin-bottom: 3.125rem;
+}
+.outer-container .main .about .about__information .about__paragraph {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.25rem;
 }
 
 hr {
@@ -94,15 +128,15 @@ hr {
   flex-direction: column;
 }
 .portfolio__project-card .portfolio__image-container {
-  width: auto;
-  height: 12rem;
   margin-bottom: 0.625rem;
-  background-color: #3c3636;
+  max-width: 21rem;
 }
 .portfolio__project-card .portfolio__project-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.portfolio__project-card .portfolio__project-details .portfolio__project-name {
   font-family: "Cormorant", serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -130,14 +164,15 @@ hr {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  margin-bottom: 1.875rem;
 }
 .portfolio__project-card .portfolio__project-tags .portfolio__project-tag {
   background-color: #3c3636;
-  min-width: 4rem;
+  width: 4.5rem;
   padding: 0.3rem;
   text-align: center;
-  margin: 0.25rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 0.625rem;

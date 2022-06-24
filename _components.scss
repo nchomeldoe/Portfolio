@@ -19,18 +19,18 @@ hr {
   display: flex;
   flex-direction: column;
   .portfolio__image-container {
-    width: auto;
-    height: $image-height;
     margin-bottom: $spacing-small/2;
-    background-color: $color-contrast-background;
+    max-width: $image-max-width;
   }
   .portfolio__project-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: $font-primary;
-    font-weight: $font-weight-primary-regular;
-    font-size: $font-size-medium;
+    .portfolio__project-name {
+      font-family: $font-primary;
+      font-weight: $font-weight-primary-regular;
+      font-size: $font-size-medium;
+    }
 
     .portfolio__project-links {
       display: flex;
@@ -56,14 +56,15 @@ hr {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    margin-bottom: $spacing-medium;
 
     .portfolio__project-tag {
       background-color: $color-contrast-background;
-      min-width: 4rem;
-      padding: 0.3rem;
+      width: $tag-width;
+      padding: $tag-padding;
       text-align: center;
-      margin: $spacing-small/5;
+      margin-right: $spacing-tags;
+      margin-bottom: $spacing-tags;
       font-family: $font-secondary;
       font-weight: $font-weight-secondary-semi-bold;
       font-size: $font-size-tags;

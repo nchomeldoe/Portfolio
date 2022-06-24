@@ -5,6 +5,7 @@ $color-primary: #ffffff;
 $color-secondary: #d9bea5;
 $color-contrast-background: #3c3636;
 
+$spacing-tags: 0.25rem;
 $spacing-project-links: 0.5rem;
 $spacing-small: 1.25rem;
 $spacing-medium: 1.875rem;
@@ -26,9 +27,18 @@ $font-size-small: 1rem;
 $font-size-medium: 1.5rem;
 $font-size-large: 4rem;
 
+$line-height: 1.6rem;
+
 $hr-width-large: 5rem;
 $hr-height-large: 0.25rem;
 $hr-width-small: 3.75rem;
 $hr-height-small: 0.063rem;
 
-$image-height: 12rem;
+$image-max-width: 21rem;
+
+$tag-width: 4.5rem;
+$tag-padding: 0.3rem;
+
+@media screen and (min-width: 768px) {
+  $background-color: red;
+}

@@ -61,10 +61,12 @@
         font-family: $font-secondary;
         font-weight: $font-weight-primary-regular;
         font-size: $font-size-small;
+        line-height: $line-height;
       }
     }
 
     .portfolio {
+      margin-bottom: $spacing-large;
       .portfolio__header {
         display: flex;
         align-items: center;
@@ -84,6 +86,39 @@
       .portfolio__projects {
         display: flex;
         flex-direction: column;
+      }
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      .about__header {
+        .about__heading {
+          font-family: $font-primary;
+          font-weight: $font-weight-primary-bold;
+          font-size: 2 * $font-size-small;
+          margin-bottom: $spacing-small/2;
+        }
+        .about__hr {
+          width: $hr-width-large/1.5;
+          height: $hr-height-small * 2;
+          margin-bottom: $spacing-medium;
+        }
+        .about__image-container {
+          margin-bottom: $spacing-small/2;
+          max-width: $image-max-width;
+          margin-bottom: $spacing-medium;
+        }
+      }
+      .about__information {
+        .about__paragraph {
+          font-family: $font-secondary;
+          font-weight: $font-weight-primary-regular;
+          font-size: $font-size-small;
+          line-height: $line-height;
+          margin-bottom: $spacing-small;
+        }
+        margin-bottom: $spacing-large;
       }
     }
   }
