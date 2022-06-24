@@ -59,7 +59,7 @@
 
       .intro__paragraph {
         font-family: $font-secondary;
-        font-weight: $font-weight-primary-regular;
+        font-weight: $font-weight-secondary-regular;
         font-size: $font-size-small;
         line-height: $line-height;
       }
@@ -113,12 +113,32 @@
       .about__information {
         .about__paragraph {
           font-family: $font-secondary;
-          font-weight: $font-weight-primary-regular;
+          font-weight: $font-weight-secondary-regular;
           font-size: $font-size-small;
           line-height: $line-height;
           margin-bottom: $spacing-small;
         }
         margin-bottom: $spacing-large;
+      }
+    }
+
+    .cv-info {
+      display: flex;
+      flex-direction: column;
+      .cv-info__section {
+        .cv-info__header {
+          .cv-info__heading {
+            font-family: $font-primary;
+            font-weight: $font-weight-primary-bold;
+            font-size: $font-size-cv-info-header;
+            margin-bottom: $spacing-small/2;
+          }
+          .cv-info__hr {
+            width: $hr-width-large/1.5;
+            height: $hr-height-small * 2;
+            margin-bottom: $spacing-medium;
+          }
+        }
       }
     }
   }

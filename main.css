@@ -108,6 +108,21 @@
   line-height: 1.6rem;
   margin-bottom: 1.25rem;
 }
+.outer-container .main .cv-info {
+  display: flex;
+  flex-direction: column;
+}
+.outer-container .main .cv-info .cv-info__section .cv-info__header .cv-info__heading {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.625rem;
+}
+.outer-container .main .cv-info .cv-info__section .cv-info__header .cv-info__hr {
+  width: 3.3333333333rem;
+  height: 0.126rem;
+  margin-bottom: 1.875rem;
+}
 
 hr {
   background-color: #d9bea5;
@@ -176,4 +191,24 @@ hr {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 0.625rem;
+}
+
+.cv-card .cv-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.cv-card .cv-card__header .cv-card__heading {
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.cv-card .cv-card__header .cv-card__button {
+  border: none;
+  background-color: #2c2a2a;
+  color: #ffffff;
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

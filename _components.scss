@@ -71,3 +71,25 @@ hr {
     }
   }
 }
+
+.cv-card {
+  .cv-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .cv-card__heading {
+      font-family: $font-primary;
+      font-weight: $font-weight-primary-regular;
+      font-size: $font-size-small;
+    }
+    .cv-card__button {
+      border: none;
+      background-color: $background-color;
+      color: $color-primary;
+      font-family: $font-primary;
+      font-weight: $font-weight-primary-regular;
+      font-size: $font-size-medium;
+    }
+  }
+}
