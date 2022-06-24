@@ -2,7 +2,11 @@
 
 hr {
   background-color: $color-secondary;
-  border: $color-secondary;
+  border: none;
+}
+
+a {
+  cursor: pointer;
 }
 
 .nav__hamburger {
@@ -28,7 +32,7 @@ hr {
     align-items: center;
     .portfolio__project-name {
       font-family: $font-primary;
-      font-weight: $font-weight-primary-regular;
+      font-weight: $font-weight-regular;
       font-size: $font-size-medium;
     }
 
@@ -41,7 +45,7 @@ hr {
         justify-content: center;
         min-width: 3rem;
         height: 3rem;
-        background-color: $color-contrast-background;
+        background-color: $background-color-secondary;
         border-radius: 50%;
         margin-left: $spacing-project-links;
       }
@@ -59,14 +63,14 @@ hr {
     margin-bottom: $spacing-medium;
 
     .portfolio__project-tag {
-      background-color: $color-contrast-background;
+      background-color: $background-color-secondary;
       width: $tag-width;
       padding: $tag-padding;
       text-align: center;
       margin-right: $spacing-tags;
       margin-bottom: $spacing-tags;
       font-family: $font-secondary;
-      font-weight: $font-weight-secondary-semi-bold;
+      font-weight: $font-weight-semi-bold;
       font-size: $font-size-tags;
     }
   }
@@ -77,19 +81,33 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    margin-bottom: $spacing-small;
+
     .cv-card__heading {
       font-family: $font-primary;
-      font-weight: $font-weight-primary-regular;
+      font-weight: $font-weight-regular;
       font-size: $font-size-small;
     }
     .cv-card__button {
       border: none;
-      background-color: $background-color;
+      background-color: $background-color-primary;
       color: $color-primary;
       font-family: $font-primary;
-      font-weight: $font-weight-primary-regular;
+      font-weight: $font-weight-regular;
       font-size: $font-size-medium;
     }
   }
+  .cv-card__hr {
+    height: $hr-height-small * 2;
+    width: 100%;
+    margin-bottom: $spacing-small;
+    background-color: $background-color-secondary;
+  }
+}
+
+.contact__button {
+  background-color: $background-color-primary;
+  border: 0.063rem solid $color-secondary;
+  color: $color-primary;
+  width: 90%;
 }

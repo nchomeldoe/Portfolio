@@ -7,21 +7,21 @@
 }
 
 .outer-container {
-  background-color: $background-color;
+  background-color: $background-color-primary;
   color: $color-primary;
 
   .nav {
     display: flex;
     justify-content: space-between;
     padding: $spacing-small $spacing-medium;
-    background-color: $background-color;
+    background-color: $background-color-primary;
     position: fixed;
     top: 0;
     width: 100%;
 
     .nav__name {
       font-family: $font-primary;
-      font-weight: $font-weight-primary-bold;
+      font-weight: $font-weight-bold;
       font-size: $font-size-mobile-nav;
       .nav__last-name {
         color: $color-secondary;
@@ -46,7 +46,7 @@
       margin-bottom: $spacing-large;
       .intro__heading {
         font-family: $font-primary;
-        font-weight: $font-weight-primary-regular;
+        font-weight: $font-weight-regular;
         font-size: $font-size-large;
         margin-bottom: $spacing-medium;
       }
@@ -59,7 +59,7 @@
 
       .intro__paragraph {
         font-family: $font-secondary;
-        font-weight: $font-weight-secondary-regular;
+        font-weight: $font-weight-regular;
         font-size: $font-size-small;
         line-height: $line-height;
       }
@@ -74,7 +74,7 @@
 
         .portfolio__heading {
           font-family: $font-primary;
-          font-weight: $font-weight-primary-bold;
+          font-weight: $font-weight-bold;
           font-size: 2 * $font-size-small;
         }
 
@@ -95,7 +95,7 @@
       .about__header {
         .about__heading {
           font-family: $font-primary;
-          font-weight: $font-weight-primary-bold;
+          font-weight: $font-weight-bold;
           font-size: 2 * $font-size-small;
           margin-bottom: $spacing-small/2;
         }
@@ -113,7 +113,7 @@
       .about__information {
         .about__paragraph {
           font-family: $font-secondary;
-          font-weight: $font-weight-secondary-regular;
+          font-weight: $font-weight-regular;
           font-size: $font-size-small;
           line-height: $line-height;
           margin-bottom: $spacing-small;
@@ -125,20 +125,36 @@
     .cv-info {
       display: flex;
       flex-direction: column;
+      margin-bottom: $spacing-medium;
       .cv-info__section {
+        margin-bottom: $spacing-medium;
         .cv-info__header {
           .cv-info__heading {
             font-family: $font-primary;
-            font-weight: $font-weight-primary-bold;
+            font-weight: $font-weight-bold;
             font-size: $font-size-cv-info-header;
             margin-bottom: $spacing-small/2;
           }
           .cv-info__hr {
             width: $hr-width-large/1.5;
             height: $hr-height-small * 2;
-            margin-bottom: $spacing-medium;
+            margin-bottom: $spacing-small;
           }
         }
+      }
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .contact__heading {
+        font-family: $font-primary;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-large;
+        margin-bottom: $spacing-medium;
+        align-items: center;
+        text-align: center;
       }
     }
   }
