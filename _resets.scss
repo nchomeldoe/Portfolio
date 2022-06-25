@@ -1,5 +1,22 @@
+@use "./variables" as *;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  &:visited,
+  &:hover,
+  &:active {
+    color: inherit;
+  }
+}
+
+hr {
+  background-color: $color-secondary;
+  border: none;
 }

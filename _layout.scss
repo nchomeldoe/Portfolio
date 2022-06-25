@@ -1,5 +1,11 @@
 @use "./variables" as *;
 
+// transition: 0.2s;
+// &:hover,
+// &:focus {
+//   transform: scale(1.1);
+// }
+
 .outer-container {
   background-color: $background-color-primary;
   color: $color-primary;
@@ -38,6 +44,11 @@
         font-family: $font-primary;
         font-weight: $font-weight-bold;
         font-size: 0.8rem;
+        transition: 0.2s;
+        &:hover,
+        &:focus {
+          transform: scale(1.1);
+        }
         @media screen and (min-width: 768px) {
           & {
             font-size: 1.2rem;
@@ -71,6 +82,11 @@
           font-family: $font-secondary;
           font-weight: $font-weight-regular;
           font-size: 1rem;
+          transition: color 0.2s;
+          &:hover,
+          &:focus {
+            color: $color-secondary;
+          }
           @media screen and (min-width: 1024px) {
             & {
               font-size: 1.2rem;
@@ -174,6 +190,9 @@
         padding-top: $anchor-padding-mobile;
         margin-bottom: 3.125rem;
         margin-top: $anchor-compensation-margin-mobile;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         @media screen and (min-width: 768px) {
           & {
             padding-top: $anchor-padding-tablet;
@@ -198,6 +217,7 @@
           display: flex;
           align-items: center;
           margin-bottom: 1.875rem;
+          align-self: flex-start;
 
           .portfolio__heading {
             font-family: $font-primary;
@@ -245,11 +265,17 @@
           flex-direction: column;
           gap: 1.875rem;
           align-items: flex-start;
+          justify-content: center;
 
           @media screen and (min-width: 768px) {
             & {
               flex-direction: row;
               flex-wrap: wrap;
+            }
+          }
+          @media screen and (min-width: 1440px) {
+            & {
+              gap: 3rem;
             }
           }
         }
@@ -469,6 +495,11 @@
       align-items: center;
       justify-content: center;
       padding: 1.25rem 1.875rem;
+      @media screen and (min-width: 1440px) {
+        & {
+          height: 8rem;
+        }
+      }
       .footer__links {
         display: flex;
         justify-content: space-around;

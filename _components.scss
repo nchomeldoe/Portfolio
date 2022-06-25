@@ -1,25 +1,5 @@
 @use "./variables" as *;
 
-hr {
-  background-color: $color-secondary;
-  border: none;
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none;
-  transition: 0.2s;
-  &:visited,
-  &:hover,
-  &:active {
-    color: inherit;
-  }
-  &:hover,
-  &:focus {
-    transform: scale(1.1);
-  }
-}
-
 .nav__hamburger {
   color: $color-primary;
   @media screen and (min-width: 768px) {
@@ -91,6 +71,13 @@ a {
         background-color: $background-color-secondary;
         border-radius: 50%;
         margin-left: 0.5rem;
+        .portfolio__project-link {
+          transition: 0.2s;
+          &:hover,
+          &:focus {
+            transform: scale(1.25);
+          }
+        }
       }
     }
   }
@@ -229,6 +216,13 @@ a {
   font-size: 1rem;
   height: 3.75rem;
   cursor: pointer;
+  transition: all 0.2s;
+  &:hover,
+  &:focus {
+    border: none;
+    background-color: $color-primary;
+    color: $background-color-primary;
+  }
   @media screen and (min-width: 768px) {
     & {
       width: 16rem;
@@ -241,7 +235,7 @@ a {
       font-size: 1.4rem;
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1440px) {
     & {
       width: 20rem;
       font-size: 1.6rem;
@@ -261,4 +255,18 @@ a {
   color: $color-secondary;
   font-family: $font-secondary;
   font-weight: $font-weight-bold;
+  transition: all 0.2s;
+  &:hover,
+  &:focus {
+    background-color: $color-secondary;
+    color: $background-color-primary;
+  }
+  @media screen and (min-width: 1440px) {
+    & {
+      width: 4rem;
+      height: 4rem;
+      margin-left: 1rem;
+      font-size: 1.5rem;
+    }
+  }
 }
