@@ -14,7 +14,8 @@ a {
   &:active {
     color: inherit;
   }
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.1);
   }
 }
@@ -61,6 +62,11 @@ a {
           font-size: 1.4rem;
         }
       }
+      @media screen and (min-width: 1024px) {
+        & {
+          font-size: 1.6rem;
+        }
+      }
     }
 
     .portfolio__project-links {
@@ -87,6 +93,11 @@ a {
         height: 0.08rem;
       }
     }
+    @media screen and (min-width: 768px) {
+      & {
+        height: 0.1rem;
+      }
+    }
   }
   .portfolio__project-tags {
     display: flex;
@@ -109,6 +120,14 @@ a {
           font-size: 0.8rem;
         }
       }
+      @media screen and (min-width: 1024px) {
+        & {
+          width: 5rem;
+          font-size: 0.75rem;
+          margin-right: 0.4rem;
+          margin-bottom: 0.4rem;
+        }
+      }
     }
   }
 }
@@ -124,6 +143,16 @@ a {
       font-family: $font-primary;
       font-weight: $font-weight-regular;
       font-size: 1rem;
+      @media screen and (min-width: 768px) {
+        & {
+          font-size: 1.2rem;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        & {
+          font-size: 1.4rem;
+        }
+      }
     }
     .cv-card__button {
       border: none;
@@ -131,14 +160,34 @@ a {
       color: $color-primary;
       font-family: $font-primary;
       font-weight: $font-weight-regular;
-      font-size: $font-size-medium;
+      font-size: 1.5rem;
+      @media screen and (min-width: 768px) {
+        & {
+          font-size: 1.7rem;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        & {
+          font-size: 1.9rem;
+        }
+      }
     }
   }
   .cv-card__hr {
-    height: $hr-height-small;
+    height: 0.063rem;
     width: 100%;
     margin-bottom: 1.25rem;
     background-color: $background-color-cv-card-hr;
+    @media screen and (min-width: 768px) {
+      & {
+        height: 0.08rem;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      & {
+        height: 0.1rem;
+      }
+    }
   }
 }
 
@@ -146,11 +195,24 @@ a {
   background-color: $background-color-primary;
   border: 0.063rem solid $color-secondary;
   color: $color-primary;
-  width: 90%;
+  width: 14rem;
   font-family: $font-secondary;
   font-weight: $font-weight-medium;
-  font-size: $font-size-small;
+  font-size: 1rem;
   height: 3.75rem;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    & {
+      width: 16rem;
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    & {
+      width: 18rem;
+      font-size: 1.4rem;
+    }
+  }
 }
 
 .footer__link-container {
