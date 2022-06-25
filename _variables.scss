@@ -17,9 +17,13 @@ $font-weight-medium: 500;
 $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
 
-$anchor-padding-mobile: 60px;
-$anchor-compensation-margin-mobile: -60px;
-$anchor-padding-tablet: 100px;
-$anchor-compensation-margin-tablet: -100px;
+$anchor-padding-mobile: 3.75rem;
+$anchor-compensation-margin-mobile: -3.75rem;
+$anchor-padding-tablet: 6.563rem;
+$anchor-compensation-margin-tablet: -6.563rem;
+$anchor-padding-small-desktop: 8.75rem;
+$anchor-compensation-margin-small-desktop: -8.75rem;
+$anchor-padding-large-desktop: 12rem;
+$anchor-compensation-margin-large-desktop: -12rem;
 
 $max-width-content: 90rem;

@@ -28,6 +28,11 @@
           padding: 2.5rem 3.5rem;
         }
       }
+      @media screen and (min-width: 1440px) {
+        & {
+          padding: 2.5rem 4rem;
+        }
+      }
 
       .nav__name {
         font-family: $font-primary;
@@ -41,6 +46,11 @@
         @media screen and (min-width: 1024px) {
           & {
             font-size: 1.4rem;
+          }
+        }
+        @media screen and (min-width: 1440px) {
+          & {
+            font-size: 1.6rem;
           }
         }
 
@@ -61,6 +71,16 @@
           font-family: $font-secondary;
           font-weight: $font-weight-regular;
           font-size: 1rem;
+          @media screen and (min-width: 1024px) {
+            & {
+              font-size: 1.2rem;
+            }
+          }
+          @media screen and (min-width: 1440px) {
+            & {
+              font-size: 1.4rem;
+            }
+          }
         }
       }
     }
@@ -72,16 +92,17 @@
       @media screen and (min-width: 768px) {
         & {
           margin: 1.25rem 3rem;
-        }
-      }
-      @media screen and (min-width: 1024px) {
-        & {
-          margin: 1.25rem 3.5rem;
+          padding-top: 8rem;
         }
       }
 
       .intro {
         margin-bottom: 3.125rem;
+        @media screen and (min-width: 1440px) {
+          & {
+            margin-bottom: 5rem;
+          }
+        }
 
         .intro__heading {
           font-family: $font-primary;
@@ -98,6 +119,11 @@
               font-size: 4.2rem;
             }
           }
+          @media screen and (min-width: 1440px) {
+            & {
+              font-size: 5rem;
+            }
+          }
         }
 
         .intro__hr {
@@ -109,9 +135,9 @@
               height: 0.27rem;
             }
           }
-          @media screen and (min-width: 768px) {
+          @media screen and (min-width: 1440px) {
             & {
-              height: 0.3rem;
+              width: 5.5rem;
             }
           }
         }
@@ -134,11 +160,19 @@
               line-height: 2.4rem;
             }
           }
+          @media screen and (min-width: 1440px) {
+            & {
+              font-size: 1.6rem;
+              line-height: 2.6rem;
+              max-width: 38rem;
+            }
+          }
         }
       }
 
       .portfolio {
         padding-top: $anchor-padding-mobile;
+        margin-bottom: 3.125rem;
         margin-top: $anchor-compensation-margin-mobile;
         @media screen and (min-width: 768px) {
           & {
@@ -146,7 +180,20 @@
             margin-top: $anchor-compensation-margin-tablet;
           }
         }
-        margin-bottom: 3.125rem;
+        @media screen and (min-width: 1024px) {
+          & {
+            padding-top: $anchor-padding-small-desktop;
+            margin-top: $anchor-compensation-margin-small-desktop;
+          }
+        }
+        @media screen and (min-width: 1440px) {
+          & {
+            padding-top: $anchor-padding-large-desktop;
+            margin-top: $anchor-compensation-margin-large-desktop;
+            margin-bottom: 8rem;
+          }
+        }
+
         .portfolio__header {
           display: flex;
           align-items: center;
@@ -166,19 +213,39 @@
                 font-size: 2.4rem;
               }
             }
+            @media screen and (min-width: 1440px) {
+              & {
+                font-size: 2.6rem;
+              }
+            }
           }
 
           .portfolio__arrow {
             margin-left: 1.25rem;
+            @media screen and (min-width: 768px) {
+              & {
+                font-size: 1.2rem;
+              }
+            }
+            @media screen and (min-width: 1024px) {
+              & {
+                font-size: 1.4rem;
+              }
+            }
+            @media screen and (min-width: 1440px) {
+              & {
+                font-size: 1.6rem;
+              }
+            }
           }
         }
 
         .portfolio__projects {
           display: flex;
           flex-direction: column;
-          align-items: center;
-          justify-content: space-between;
+          gap: 1.875rem;
           align-items: flex-start;
+
           @media screen and (min-width: 768px) {
             & {
               flex-direction: row;
@@ -216,6 +283,11 @@
               grid-template-rows: 5rem 25rem;
             }
           }
+          @media screen and (min-width: 1440px) {
+            & {
+              margin-bottom: 5rem;
+            }
+          }
           display: flex;
           flex-direction: column;
           .about__header {
@@ -234,6 +306,11 @@
               @media screen and (min-width: 1024px) {
                 & {
                   font-size: 2.4rem;
+                }
+              }
+              @media screen and (min-width: 1440px) {
+                & {
+                  font-size: 2.6rem;
                 }
               }
             }
@@ -278,6 +355,12 @@
                   padding-right: 3.5rem;
                 }
               }
+              @media screen and (min-width: 1440px) {
+                & {
+                  font-size: 1.4rem;
+                  line-height: 1.8rem;
+                }
+              }
             }
           }
         }
@@ -313,6 +396,11 @@
                 @media screen and (min-width: 1024px) {
                   & {
                     font-size: 1.6rem;
+                  }
+                }
+                @media screen and (min-width: 1440px) {
+                  & {
+                    font-size: 1.8rem;
                   }
                 }
               }
@@ -354,9 +442,14 @@
               font-size: 4rem;
             }
           }
-          @media screen and (min-width: 768px) {
+          @media screen and (min-width: 1024px) {
             & {
               font-size: 4.2rem;
+            }
+          }
+          @media screen and (min-width: 1440px) {
+            & {
+              font-size: 4.4rem;
             }
           }
         }

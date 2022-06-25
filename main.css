@@ -29,6 +29,11 @@
     padding: 2.5rem 3.5rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .nav {
+    padding: 2.5rem 4rem;
+  }
+}
 .outer-container .inner-container .nav .nav__name {
   font-family: "Cormorant", serif;
   font-weight: 700;
@@ -42,6 +47,11 @@
 @media screen and (min-width: 1024px) {
   .outer-container .inner-container .nav .nav__name {
     font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .nav .nav__name {
+    font-size: 1.6rem;
   }
 }
 .outer-container .inner-container .nav .nav__name .nav__last-name {
@@ -61,6 +71,16 @@
   font-weight: 400;
   font-size: 1rem;
 }
+@media screen and (min-width: 1024px) {
+  .outer-container .inner-container .nav .nav__link-container .nav__link {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .nav .nav__link-container .nav__link {
+    font-size: 1.4rem;
+  }
+}
 .outer-container .inner-container .main {
   margin: 1.25rem 2rem;
   padding-top: 6rem;
@@ -68,15 +88,16 @@
 @media screen and (min-width: 768px) {
   .outer-container .inner-container .main {
     margin: 1.25rem 3rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .outer-container .inner-container .main {
-    margin: 1.25rem 3.5rem;
+    padding-top: 8rem;
   }
 }
 .outer-container .inner-container .main .intro {
   margin-bottom: 3.125rem;
+}
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .main .intro {
+    margin-bottom: 5rem;
+  }
 }
 .outer-container .inner-container .main .intro .intro__heading {
   font-family: "Cormorant", serif;
@@ -94,6 +115,11 @@
     font-size: 4.2rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .main .intro .intro__heading {
+    font-size: 5rem;
+  }
+}
 .outer-container .inner-container .main .intro .intro__hr {
   width: 5rem;
   height: 0.25rem;
@@ -104,9 +130,9 @@
     height: 0.27rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .outer-container .inner-container .main .intro .intro__hr {
-    height: 0.3rem;
+    width: 5.5rem;
   }
 }
 .outer-container .inner-container .main .intro .intro__paragraph {
@@ -128,15 +154,35 @@
     line-height: 2.4rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .main .intro .intro__paragraph {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    max-width: 38rem;
+  }
+}
 .outer-container .inner-container .main .portfolio {
-  padding-top: 60px;
-  margin-top: -60px;
+  padding-top: 3.75rem;
   margin-bottom: 3.125rem;
+  margin-top: -3.75rem;
 }
 @media screen and (min-width: 768px) {
   .outer-container .inner-container .main .portfolio {
-    padding-top: 100px;
-    margin-top: -100px;
+    padding-top: 6.563rem;
+    margin-top: -6.563rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .outer-container .inner-container .main .portfolio {
+    padding-top: 8.75rem;
+    margin-top: -8.75rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .main .portfolio {
+    padding-top: 12rem;
+    margin-top: -12rem;
+    margin-bottom: 8rem;
   }
 }
 .outer-container .inner-container .main .portfolio .portfolio__header {
@@ -159,14 +205,33 @@
     font-size: 2.4rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .main .portfolio .portfolio__header .portfolio__heading {
+    font-size: 2.6rem;
+  }
+}
 .outer-container .inner-container .main .portfolio .portfolio__header .portfolio__arrow {
   margin-left: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .outer-container .inner-container .main .portfolio .portfolio__header .portfolio__arrow {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .outer-container .inner-container .main .portfolio .portfolio__header .portfolio__arrow {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .main .portfolio .portfolio__header .portfolio__arrow {
+    font-size: 1.6rem;
+  }
 }
 .outer-container .inner-container .main .portfolio .portfolio__projects {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  gap: 1.875rem;
   align-items: flex-start;
 }
 @media screen and (min-width: 768px) {
@@ -181,16 +246,16 @@
   }
 }
 .outer-container .inner-container .main .personal-information .about {
-  padding-top: 60px;
-  margin-top: -60px;
+  padding-top: 3.75rem;
+  margin-top: -3.75rem;
   margin-bottom: 3.125rem;
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .outer-container .inner-container .main .personal-information .about {
-    padding-top: 100px;
-    margin-top: -100px;
+    padding-top: 6.563rem;
+    margin-top: -6.563rem;
     display: grid;
     grid-template-columns: 1.3fr 1fr;
     grid-template-rows: 5rem 25rem;
@@ -198,11 +263,16 @@
 }
 @media screen and (min-width: 1024px) {
   .outer-container .inner-container .main .personal-information .about {
-    padding-top: 100px;
-    margin-top: -100px;
+    padding-top: 6.563rem;
+    margin-top: -6.563rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 5rem 25rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .main .personal-information .about {
+    margin-bottom: 5rem;
   }
 }
 .outer-container .inner-container .main .personal-information .about .about__header .about__heading {
@@ -221,6 +291,11 @@
 @media screen and (min-width: 1024px) {
   .outer-container .inner-container .main .personal-information .about .about__header .about__heading {
     font-size: 2.4rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .main .personal-information .about .about__header .about__heading {
+    font-size: 2.6rem;
   }
 }
 .outer-container .inner-container .main .personal-information .about .about__header .about__hr {
@@ -263,6 +338,12 @@
     padding-right: 3.5rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .main .personal-information .about .about__information .about__paragraph {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+}
 .outer-container .inner-container .main .personal-information .cv-info {
   display: flex;
   flex-direction: column;
@@ -296,6 +377,11 @@
 @media screen and (min-width: 1024px) {
   .outer-container .inner-container .main .personal-information .cv-info .cv-info__section .cv-info__header .cv-info__heading {
     font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .main .personal-information .cv-info .cv-info__section .cv-info__header .cv-info__heading {
+    font-size: 1.8rem;
   }
 }
 .outer-container .inner-container .main .personal-information .cv-info .cv-info__section .cv-info__header .cv-info__hr {
@@ -332,9 +418,14 @@
     font-size: 4rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .outer-container .inner-container .main .contact .contact__heading {
     font-size: 4.2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .main .contact .contact__heading {
+    font-size: 4.4rem;
   }
 }
 .outer-container .footer-container {
@@ -388,7 +479,6 @@ a:hover, a:focus {
   display: flex;
   flex-direction: column;
   max-width: 25rem;
-  margin-bottom: 1.875rem;
 }
 @media screen and (min-width: 768px) {
   .portfolio__project-card {
@@ -398,6 +488,11 @@ a:hover, a:focus {
 @media screen and (min-width: 1024px) {
   .portfolio__project-card {
     max-width: 18rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .portfolio__project-card {
+    max-width: 26rem;
   }
 }
 .portfolio__project-card .portfolio__image-container {
@@ -424,6 +519,11 @@ a:hover, a:focus {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .portfolio__project-card .portfolio__project-details .portfolio__project-name {
+    font-size: 1.8rem;
+  }
+}
 .portfolio__project-card .portfolio__project-details .portfolio__project-links {
   display: flex;
   align-items: center;
@@ -448,7 +548,7 @@ a:hover, a:focus {
     height: 0.08rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .portfolio__project-card .portfolio__hr {
     height: 0.1rem;
   }
@@ -483,6 +583,14 @@ a:hover, a:focus {
     margin-bottom: 0.4rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .portfolio__project-card .portfolio__project-tags .portfolio__project-tag {
+    width: 7rem;
+    font-size: 1rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+}
 
 .cv-card .cv-card__header {
   display: flex;
@@ -505,6 +613,11 @@ a:hover, a:focus {
     font-size: 1.4rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .cv-card .cv-card__header .cv-card__heading {
+    font-size: 1.6rem;
+  }
+}
 .cv-card .cv-card__header .cv-card__button {
   border: none;
   background-color: #2c2a2a;
@@ -521,6 +634,11 @@ a:hover, a:focus {
 @media screen and (min-width: 1024px) {
   .cv-card .cv-card__header .cv-card__button {
     font-size: 1.9rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cv-card .cv-card__header .cv-card__button {
+    font-size: 2.1rem;
   }
 }
 .cv-card .cv-card__hr {
@@ -561,6 +679,12 @@ a:hover, a:focus {
   .contact__button {
     width: 18rem;
     font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact__button {
+    width: 20rem;
+    font-size: 1.6rem;
   }
 }
 
