@@ -21,30 +21,36 @@ a {
 
 .nav__hamburger {
   color: $color-primary;
-}
-
-@media screen and (min-width: 768px) {
-  .nav__hamburger {
-    display: none;
+  @media screen and (min-width: 768px) {
+    & {
+      display: none;
+    }
   }
 }
 
 .portfolio__project-card {
   display: flex;
   flex-direction: column;
+  max-width: 25rem;
+  @media screen and (min-width: 768px) {
+    & {
+      max-width: 20rem;
+      height: 30rem;
+    }
+  }
   .portfolio__image-container {
-    margin-bottom: $spacing-small/2;
-    max-width: $image-max-width;
+    margin-bottom: 0.6rem;
+    max-width: 30rem;
   }
   .portfolio__project-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: $spacing-small/2;
+    margin-bottom: 0.8rem;
     .portfolio__project-name {
       font-family: $font-primary;
       font-weight: $font-weight-regular;
-      font-size: $font-size-medium;
+      font-size: 1.4rem;
     }
 
     .portfolio__project-links {
@@ -58,28 +64,28 @@ a {
         height: 3rem;
         background-color: $background-color-secondary;
         border-radius: 50%;
-        margin-left: $spacing-links;
+        margin-left: 0.5rem;
       }
     }
   }
   .portfolio__hr {
     width: $hr-width-small;
     height: $hr-height-small;
-    margin-bottom: $spacing-small;
+    margin-bottom: 1.25rem;
   }
   .portfolio__project-tags {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: $spacing-medium;
+    margin-bottom: 1.875rem;
 
     .portfolio__project-tag {
       background-color: $background-color-secondary;
       width: $tag-width;
       padding: $tag-padding;
       text-align: center;
-      margin-right: $spacing-tags;
-      margin-bottom: $spacing-tags;
+      margin-right: 0.25rem;
+      margin-bottom: 0.25rem;
       font-family: $font-secondary;
       font-weight: $font-weight-semi-bold;
       font-size: $font-size-tags;
@@ -92,7 +98,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: $spacing-small;
+    margin-bottom: 1.25rem;
 
     .cv-card__heading {
       font-family: $font-primary;
@@ -111,7 +117,7 @@ a {
   .cv-card__hr {
     height: $hr-height-small;
     width: 100%;
-    margin-bottom: $spacing-small;
+    margin-bottom: 1.25rem;
     background-color: $background-color-cv-card-hr;
   }
 }
@@ -135,7 +141,7 @@ a {
   height: 3rem;
   background-color: $background-color-footer-links;
   border-radius: 50%;
-  margin-left: $spacing-links;
+  margin-left: 0.5rem;
   color: $color-secondary;
   font-family: $font-secondary;
   font-weight: $font-weight-bold;

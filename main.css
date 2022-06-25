@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Inter:wght@400;500;600&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .outer-container {
   background-color: #2c2a2a;
   color: #ffffff;
@@ -18,25 +12,46 @@
   top: 0;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .outer-container .nav {
+    padding: 2.5rem 3rem;
+  }
+}
 .outer-container .nav .nav__name {
   font-family: "Cormorant", serif;
   font-weight: 700;
   font-size: 0.8rem;
 }
+@media screen and (min-width: 768px) {
+  .outer-container .nav .nav__name {
+    font-size: 1.2rem;
+  }
+}
 .outer-container .nav .nav__name .nav__last-name {
   color: #d9bea5;
 }
-.outer-container .nav .nav__links {
+.outer-container .nav .nav__link-container {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .outer-container .nav .nav__links {
+  .outer-container .nav .nav__link-container {
     display: inline-block;
   }
 }
+.outer-container .nav .nav__link-container .nav__link {
+  margin-left: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
 .outer-container .main {
-  margin: 1.25rem 1.875rem;
-  padding-top: 5rem;
+  margin: 1.25rem 2rem;
+  padding-top: 6rem;
+}
+@media screen and (min-width: 768px) {
+  .outer-container .main {
+    margin: 1.25rem 2.5rem;
+  }
 }
 .outer-container .main .intro {
   margin-bottom: 3.125rem;
@@ -44,24 +59,47 @@
 .outer-container .main .intro .intro__heading {
   font-family: "Cormorant", serif;
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 3.8rem;
   margin-bottom: 1.875rem;
+}
+@media screen and (min-width: 768px) {
+  .outer-container .main .intro .intro__heading {
+    font-size: 4rem;
+  }
 }
 .outer-container .main .intro .intro__hr {
   width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.875rem;
 }
+@media screen and (min-width: 768px) {
+  .outer-container .main .intro .intro__hr {
+    height: 0.35rem;
+  }
+}
 .outer-container .main .intro .intro__paragraph {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.6rem;
+  max-width: 28rem;
+}
+@media screen and (min-width: 768px) {
+  .outer-container .main .intro .intro__paragraph {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
 }
 .outer-container .main .portfolio {
   padding-top: 60px;
   margin-top: -60px;
   margin-bottom: 3.125rem;
+}
+@media screen and (min-width: 768px) {
+  .outer-container .main .portfolio {
+    padding-top: 100px;
+    margin-top: -100px;
+  }
 }
 .outer-container .main .portfolio .portfolio__header {
   display: flex;
@@ -71,7 +109,12 @@
 .outer-container .main .portfolio .portfolio__header .portfolio__heading {
   font-family: "Cormorant", serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 768px) {
+  .outer-container .main .portfolio .portfolio__header .portfolio__heading {
+    font-size: 2.2rem;
+  }
 }
 .outer-container .main .portfolio .portfolio__header .portfolio__arrow {
   margin-left: 1.25rem;
@@ -79,6 +122,14 @@
 .outer-container .main .portfolio .portfolio__projects {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .outer-container .main .portfolio .portfolio__projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .outer-container .main .about {
   padding-top: 60px;
@@ -86,19 +137,25 @@
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .outer-container .main .about {
+    padding-top: 100px;
+    margin-top: -100px;
+  }
+}
 .outer-container .main .about .about__header .about__heading {
   font-family: "Cormorant", serif;
   font-weight: 700;
   font-size: 2rem;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.8rem;
 }
 .outer-container .main .about .about__header .about__hr {
-  width: 3.3333333333rem;
+  width: 3.5rem;
   height: 0.126rem;
   margin-bottom: 1.875rem;
 }
 .outer-container .main .about .about__header .about__image-container {
-  margin-bottom: 0.625rem;
+  margin-bottom: 1.25rem/2;
   max-width: 30rem;
   margin-bottom: 1.875rem;
 }
@@ -124,10 +181,10 @@
   font-family: "Cormorant", serif;
   font-weight: 700;
   font-size: 1.2rem;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.8rem;
 }
 .outer-container .main .cv-info .cv-info__section .cv-info__header .cv-info__hr {
-  width: 3.3333333333rem;
+  width: 3.5rem;
   height: 0.126rem;
   margin-bottom: 1.25rem;
 }
@@ -181,30 +238,37 @@ a:hover {
 .nav__hamburger {
   color: #ffffff;
 }
-
 @media screen and (min-width: 768px) {
   .nav__hamburger {
     display: none;
   }
 }
+
 .portfolio__project-card {
   display: flex;
   flex-direction: column;
+  max-width: 25rem;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__project-card {
+    max-width: 20rem;
+    height: 30rem;
+  }
 }
 .portfolio__project-card .portfolio__image-container {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.6rem;
   max-width: 30rem;
 }
 .portfolio__project-card .portfolio__project-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.8rem;
 }
 .portfolio__project-card .portfolio__project-details .portfolio__project-name {
   font-family: "Cormorant", serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .portfolio__project-card .portfolio__project-details .portfolio__project-links {
   display: flex;
@@ -292,4 +356,10 @@ a:hover {
   color: #d9bea5;
   font-family: "Inter", sans-serif;
   font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */
