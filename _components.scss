@@ -1,14 +1,5 @@
 @use "./variables" as *;
 
-.nav__hamburger {
-  color: $color-primary;
-  @media screen and (min-width: 768px) {
-    & {
-      display: none;
-    }
-  }
-}
-
 .portfolio__project-card {
   display: flex;
   flex-direction: column;
@@ -138,30 +129,44 @@
 }
 
 .cv-card {
-  .cv-card__header {
+  // .cv-card__header {
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  // margin-bottom: 1.25rem;
+  .cv-card__input {
+    display: none;
+    &:checked ~ .cv-card__dropdown-content {
+      // border-bottom-left-radius: 0.25em;
+      // border-bottom-right-radius: 0.25em;
+      height: auto;
+      // margin-bottom: 0.125em;
+    }
+  }
+
+  .cv-card__label {
+    font-family: $font-primary;
+    font-weight: $font-weight-regular;
+    font-size: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.25rem;
-
-    .cv-card__heading {
-      font-family: $font-primary;
-      font-weight: $font-weight-regular;
-      font-size: 1rem;
-      @media screen and (min-width: 768px) {
-        & {
-          font-size: 1.2rem;
-        }
+    z-index: 20;
+    cursor: pointer;
+    @media screen and (min-width: 768px) {
+      & {
+        font-size: 1.2rem;
       }
-      @media screen and (min-width: 1024px) {
-        & {
-          font-size: 1.4rem;
-        }
+    }
+    @media screen and (min-width: 1024px) {
+      & {
+        font-size: 1.4rem;
       }
-      @media screen and (min-width: 1440px) {
-        & {
-          font-size: 1.6rem;
-        }
+    }
+    @media screen and (min-width: 1440px) {
+      & {
+        font-size: 1.6rem;
       }
     }
     .cv-card__button {
@@ -171,6 +176,7 @@
       font-family: $font-primary;
       font-weight: $font-weight-regular;
       font-size: 1.5rem;
+      pointer-events: none;
       @media screen and (min-width: 768px) {
         & {
           font-size: 1.7rem;
@@ -187,6 +193,14 @@
         }
       }
     }
+  }
+
+  // }
+
+  .cv-card__dropdown-content {
+    height: 0px;
+    overflow: hidden;
+    z-index: 10;
   }
   .cv-card__hr {
     height: 0.063rem;
