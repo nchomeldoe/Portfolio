@@ -9,20 +9,15 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
   @media screen and (min-width: 768px) {
-    & {
-      padding: 2.5rem 3rem;
-    }
+    padding: 2.5rem 3rem;
   }
   @media screen and (min-width: 1024px) {
-    & {
-      padding: 2.5rem 3.5rem;
-    }
+    padding: 2.5rem 3.5rem;
   }
   @media screen and (min-width: 1440px) {
-    & {
-      padding: 2.5rem 4rem;
-    }
+    padding: 2.5rem 4rem;
   }
 
   .nav__name {
@@ -36,19 +31,13 @@
       transform: scale(1.1);
     }
     @media screen and (min-width: 768px) {
-      & {
-        font-size: 1.2rem;
-      }
+      font-size: 1.2rem;
     }
     @media screen and (min-width: 1024px) {
-      & {
-        font-size: 1.4rem;
-      }
+      font-size: 1.4rem;
     }
     @media screen and (min-width: 1440px) {
-      & {
-        font-size: 1.6rem;
-      }
+      font-size: 1.6rem;
     }
 
     .nav__last-name {
@@ -72,9 +61,7 @@
       .nav__hamburger {
         color: $color-primary;
         @media screen and (min-width: 768px) {
-          & {
-            display: none;
-          }
+          display: none;
         }
       }
     }
@@ -109,14 +96,10 @@
           color: $color-secondary;
         }
         @media screen and (min-width: 1024px) {
-          & {
-            font-size: 1.2rem;
-          }
+          font-size: 1.2rem;
         }
         @media screen and (min-width: 1440px) {
-          & {
-            font-size: 1.4rem;
-          }
+          font-size: 1.4rem;
         }
       }
     }
@@ -128,19 +111,13 @@
   flex-direction: column;
   max-width: 25rem;
   @media screen and (min-width: 768px) {
-    & {
-      max-width: 20rem;
-    }
+    max-width: 20rem;
   }
   @media screen and (min-width: 1024px) {
-    & {
-      max-width: 18rem;
-    }
+    max-width: 18rem;
   }
   @media screen and (min-width: 1440px) {
-    & {
-      max-width: 26rem;
-    }
+    max-width: 26rem;
   }
 
   .portfolio__image-container {
@@ -157,19 +134,13 @@
       font-weight: $font-weight-regular;
       font-size: 1.2rem;
       @media screen and (min-width: 768px) {
-        & {
-          font-size: 1.4rem;
-        }
+        font-size: 1.4rem;
       }
       @media screen and (min-width: 1024px) {
-        & {
-          font-size: 1.6rem;
-        }
+        font-size: 1.6rem;
       }
       @media screen and (min-width: 1440px) {
-        & {
-          font-size: 1.8rem;
-        }
+        font-size: 1.8rem;
       }
     }
 
@@ -200,14 +171,10 @@
     height: 0.063rem;
     margin-bottom: 1.25rem;
     @media screen and (min-width: 768px) {
-      & {
-        height: 0.08rem;
-      }
+      height: 0.08rem;
     }
     @media screen and (min-width: 1024px) {
-      & {
-        height: 0.1rem;
-      }
+      height: 0.1rem;
     }
   }
   .portfolio__project-tags {
@@ -226,26 +193,20 @@
       font-weight: $font-weight-semi-bold;
       font-size: 0.625rem;
       @media screen and (min-width: 768px) {
-        & {
-          width: 6rem;
-          font-size: 0.8rem;
-        }
+        width: 6rem;
+        font-size: 0.8rem;
       }
       @media screen and (min-width: 1024px) {
-        & {
-          width: 5rem;
-          font-size: 0.75rem;
-          margin-right: 0.4rem;
-          margin-bottom: 0.4rem;
-        }
+        width: 5rem;
+        font-size: 0.75rem;
+        margin-right: 0.4rem;
+        margin-bottom: 0.4rem;
       }
       @media screen and (min-width: 1440px) {
-        & {
-          width: 7rem;
-          font-size: 1rem;
-          margin-right: 0.4rem;
-          margin-bottom: 0.4rem;
-        }
+        width: 7rem;
+        font-size: 1rem;
+        margin-right: 0.4rem;
+        margin-bottom: 0.4rem;
       }
     }
   }
@@ -255,9 +216,7 @@
   &:focus-within .cv-card__dropdown-content {
     height: auto;
     @media screen and (min-width: 1024px) {
-      & {
-        min-height: 14rem;
-      }
+      min-height: 14rem;
     }
   }
   &:focus-within .cv-card__label > .cv-card__button::after {
@@ -265,19 +224,13 @@
     font-size: 1.25rem;
     content: "-";
     @media screen and (min-width: 768px) {
-      & {
-        font-size: 1.5rem;
-      }
+      font-size: 1.5rem;
     }
     @media screen and (min-width: 1024px) {
-      & {
-        font-size: 1.75rem;
-      }
+      font-size: 1.75rem;
     }
     @media screen and (min-width: 1440px) {
-      & {
-        font-size: 2rem;
-      }
+      font-size: 2rem;
     }
   }
   .cv-card__input {
@@ -285,9 +238,7 @@
     &:checked ~ .cv-card__dropdown-content {
       height: auto;
       @media screen and (min-width: 1024px) {
-        & {
-          min-height: 14rem;
-        }
+        min-height: 14rem;
       }
     }
     &:checked ~ .cv-card__label > .cv-card__button::after {
@@ -295,19 +246,13 @@
       font-size: 1.25rem;
       content: "-";
       @media screen and (min-width: 768px) {
-        & {
-          font-size: 1.5rem;
-        }
+        font-size: 1.5rem;
       }
       @media screen and (min-width: 1024px) {
-        & {
-          font-size: 1.75rem;
-        }
+        font-size: 1.75rem;
       }
       @media screen and (min-width: 1440px) {
-        & {
-          font-size: 2rem;
-        }
+        font-size: 2rem;
       }
     }
   }
@@ -321,19 +266,13 @@
     align-items: center;
     cursor: pointer;
     @media screen and (min-width: 768px) {
-      & {
-        font-size: 1.2rem;
-      }
+      font-size: 1.2rem;
     }
     @media screen and (min-width: 1024px) {
-      & {
-        font-size: 1.4rem;
-      }
+      font-size: 1.4rem;
     }
     @media screen and (min-width: 1440px) {
-      & {
-        font-size: 1.6rem;
-      }
+      font-size: 1.6rem;
     }
     .cv-card__button {
       border: none;
@@ -347,19 +286,13 @@
         content: "+";
       }
       @media screen and (min-width: 768px) {
-        & {
-          font-size: 1.7rem;
-        }
+        font-size: 1.7rem;
       }
       @media screen and (min-width: 1024px) {
-        & {
-          font-size: 1.9rem;
-        }
+        font-size: 1.9rem;
       }
       @media screen and (min-width: 1440px) {
-        & {
-          font-size: 2.1rem;
-        }
+        font-size: 2.1rem;
       }
     }
   }
@@ -375,19 +308,13 @@
       font-size: 0.875rem;
       margin-bottom: 1.25rem;
       @media screen and (min-width: 768px) {
-        & {
-          font-size: 1rem;
-        }
+        font-size: 1rem;
       }
       @media screen and (min-width: 1024px) {
-        & {
-          font-size: 1.2rem;
-        }
+        font-size: 1.2rem;
       }
       @media screen and (min-width: 1440px) {
-        & {
-          font-size: 1.4rem;
-        }
+        font-size: 1.4rem;
       }
     }
     .cv-card__list {
@@ -396,20 +323,14 @@
       font-size: 0.75rem;
       margin-left: 0.8rem;
       @media screen and (min-width: 768px) {
-        & {
-          font-size: 0.85rem;
-        }
+        font-size: 0.85rem;
       }
       @media screen and (min-width: 1024px) {
-        & {
-          font-size: 1rem;
-        }
+        font-size: 1rem;
       }
       @media screen and (min-width: 1440px) {
-        & {
-          font-size: 1.2rem;
-          margin-left: 1rem;
-        }
+        font-size: 1.2rem;
+        margin-left: 1rem;
       }
       &--interests {
         margin-top: 1.5rem;
@@ -427,14 +348,10 @@
     margin-bottom: 1.25rem;
     background-color: $background-color-cv-card-hr;
     @media screen and (min-width: 768px) {
-      & {
-        height: 0.08rem;
-      }
+      height: 0.08rem;
     }
     @media screen and (min-width: 1024px) {
-      & {
-        height: 0.1rem;
-      }
+      height: 0.1rem;
     }
   }
 }
@@ -457,22 +374,16 @@
     color: $background-color-primary;
   }
   @media screen and (min-width: 768px) {
-    & {
-      width: 16rem;
-      font-size: 1.2rem;
-    }
+    width: 16rem;
+    font-size: 1.2rem;
   }
   @media screen and (min-width: 1024px) {
-    & {
-      width: 18rem;
-      font-size: 1.4rem;
-    }
+    width: 18rem;
+    font-size: 1.4rem;
   }
   @media screen and (min-width: 1440px) {
-    & {
-      width: 20rem;
-      font-size: 1.6rem;
-    }
+    width: 20rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -495,11 +406,9 @@
     color: $background-color-primary;
   }
   @media screen and (min-width: 1440px) {
-    & {
-      width: 4rem;
-      height: 4rem;
-      margin-left: 1rem;
-      font-size: 1.5rem;
-    }
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
   }
 }
