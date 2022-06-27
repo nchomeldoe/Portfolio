@@ -649,6 +649,11 @@
 .cv-card .cv-card__input:checked ~ .cv-card__dropdown-content {
   height: auto;
 }
+@media screen and (min-width: 1024px) {
+  .cv-card .cv-card__input:checked ~ .cv-card__dropdown-content {
+    min-height: 14rem;
+  }
+}
 .cv-card .cv-card__label {
   font-family: "Cormorant", serif;
   font-weight: 400;
@@ -709,11 +714,45 @@
   font-size: 0.875rem;
   margin-bottom: 1.25rem;
 }
+@media screen and (min-width: 768px) {
+  .cv-card .cv-card__dropdown-content .cv-card__dates {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cv-card .cv-card__dropdown-content .cv-card__dates {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cv-card .cv-card__dropdown-content .cv-card__dates {
+    font-size: 1.4rem;
+  }
+}
 .cv-card .cv-card__dropdown-content .cv-card__list {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 0.75rem;
   margin-left: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .cv-card .cv-card__dropdown-content .cv-card__list {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cv-card .cv-card__dropdown-content .cv-card__list {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cv-card .cv-card__dropdown-content .cv-card__list {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+}
+.cv-card .cv-card__dropdown-content .cv-card__list--interests {
+  margin-top: 1.5rem;
 }
 .cv-card .cv-card__dropdown-content .cv-card__list .cv-card__list-item {
   padding-left: 0.8rem;
