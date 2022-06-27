@@ -271,7 +271,7 @@
 }
 @media screen and (min-width: 768px) {
   .outer-container .inner-container .main .personal-information .about .about__image-container .about__image {
-    padding-top: 60px;
+    padding-top: 60;
   }
 }
 @media screen and (min-width: 768px) {
@@ -481,11 +481,11 @@
   }
 }
 .nav .nav__dropdown .nav__link-container {
-  height: 0px;
+  height: 0rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0.25rem;
 }
 @media screen and (min-width: 768px) {
   .nav .nav__dropdown .nav__link-container {
@@ -656,8 +656,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.25rem;
-  z-index: 20;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
@@ -700,9 +698,26 @@
   }
 }
 .cv-card .cv-card__dropdown-content {
-  height: 0px;
+  height: 0rem;
   overflow: hidden;
-  z-index: 10;
+  margin-bottom: 1.25rem;
+}
+.cv-card .cv-card__dropdown-content .cv-card__dates {
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  color: #d9bea5;
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+}
+.cv-card .cv-card__dropdown-content .cv-card__list {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-left: 0.8rem;
+}
+.cv-card .cv-card__dropdown-content .cv-card__list .cv-card__list-item {
+  padding-left: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 .cv-card .cv-card__hr {
   height: 0.063rem;
