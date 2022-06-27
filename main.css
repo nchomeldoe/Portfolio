@@ -175,12 +175,17 @@
 }
 @media screen and (min-width: 1440px) {
   .outer-container .inner-container .main .portfolio .portfolio__projects {
-    gap: 3rem;
+    gap: 5rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .outer-container .inner-container .main .personal-information {
     margin: 4.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .outer-container .inner-container .main .personal-information {
+    margin: 8rem;
   }
 }
 .outer-container .inner-container .main .personal-information .about {
@@ -547,25 +552,31 @@
 .portfolio__project-card {
   display: flex;
   flex-direction: column;
-  max-width: 25rem;
+  width: 18rem;
 }
 @media screen and (min-width: 768px) {
   .portfolio__project-card {
-    max-width: 20rem;
+    width: 20rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .portfolio__project-card {
-    max-width: 18rem;
+    width: 18rem;
   }
 }
 @media screen and (min-width: 1440px) {
   .portfolio__project-card {
-    max-width: 26rem;
+    width: 22rem;
   }
 }
 .portfolio__project-card .portfolio__image-container {
-  max-width: 100%;
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 0.2rem;
+}
+.portfolio__project-card .portfolio__image-container .portfoilio__image {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .portfolio__project-card .portfolio__project-details {
   display: flex;

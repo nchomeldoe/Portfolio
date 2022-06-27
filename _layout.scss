@@ -143,7 +143,7 @@
             flex-wrap: wrap;
           }
           @media screen and (min-width: 1440px) {
-            gap: 3rem;
+            gap: 5rem;
           }
         }
       }
@@ -151,6 +151,9 @@
       .personal-information {
         @media screen and (min-width: 1024px) {
           margin: 4.5rem;
+        }
+        @media screen and (min-width: 1440px) {
+          margin: 8rem;
         }
         .about {
           padding-top: $anchor-padding-mobile;
