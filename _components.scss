@@ -1,5 +1,125 @@
 @use "./variables" as *;
 
+.nav {
+  max-width: $max-width-content;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 2rem;
+  background-color: $background-color-primary;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    & {
+      padding: 2.5rem 3rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    & {
+      padding: 2.5rem 3.5rem;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    & {
+      padding: 2.5rem 4rem;
+    }
+  }
+
+  .nav__name {
+    font-family: $font-primary;
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+    font-size: 0.8rem;
+    transition: 0.2s;
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+    @media screen and (min-width: 768px) {
+      & {
+        font-size: 1.2rem;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      & {
+        font-size: 1.4rem;
+      }
+    }
+    @media screen and (min-width: 1440px) {
+      & {
+        font-size: 1.6rem;
+      }
+    }
+
+    .nav__last-name {
+      color: $color-secondary;
+    }
+  }
+
+  .nav__dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    .nav__input {
+      display: none;
+      &:checked ~ .nav__link-container {
+        height: auto;
+      }
+    }
+    .nav__label {
+      cursor: pointer;
+      .nav__hamburger {
+        color: $color-primary;
+        @media screen and (min-width: 768px) {
+          & {
+            display: none;
+          }
+        }
+      }
+    }
+    .nav__link-container {
+      height: 0px;
+
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      @media screen and (min-width: 768px) {
+        display: inline-block;
+        height: auto;
+      }
+
+      .nav__link {
+        @media screen and (min-width: 768px) {
+          display: inline-block;
+          margin-left: 1.4rem;
+          font-family: $font-secondary;
+          font-weight: $font-weight-regular;
+          color: $color-primary;
+          font-size: 1rem;
+        }
+
+        transition: color 0.2s;
+        &:hover,
+        &:focus {
+          color: $color-secondary;
+        }
+        @media screen and (min-width: 1024px) {
+          & {
+            font-size: 1.2rem;
+          }
+        }
+        @media screen and (min-width: 1440px) {
+          & {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 .portfolio__project-card {
   display: flex;
   flex-direction: column;
@@ -129,18 +249,10 @@
 }
 
 .cv-card {
-  // .cv-card__header {
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // margin-bottom: 1.25rem;
   .cv-card__input {
     display: none;
     &:checked ~ .cv-card__dropdown-content {
-      // border-bottom-left-radius: 0.25em;
-      // border-bottom-right-radius: 0.25em;
       height: auto;
-      // margin-bottom: 0.125em;
     }
   }
 
@@ -194,8 +306,6 @@
       }
     }
   }
-
-  // }
 
   .cv-card__dropdown-content {
     height: 0px;
