@@ -829,12 +829,12 @@
 @media screen and (min-width: 1024px) {
   .cv-card .cv-card__dropdown-content .cv-card__list {
     font-size: 1rem;
+    margin-left: 1rem;
   }
 }
 @media screen and (min-width: 1440px) {
   .cv-card .cv-card__dropdown-content .cv-card__list {
     font-size: 1.2rem;
-    margin-left: 1rem;
   }
 }
 .cv-card .cv-card__dropdown-content .cv-card__list--interests {
